@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Цветные кнопки"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10sp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/black"
+            android:onClick="dark" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginRight="20sp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="red" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/teal_200"
+            android:onClick="light" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/design_default_color_primary_variant"
+            android:onClick="purple" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Нажми кнопку, чтобы определить цвет"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="admin"
+            android:text="Информация о разработчиках" />
+    </LinearLayout>
+</LinearLayout>
